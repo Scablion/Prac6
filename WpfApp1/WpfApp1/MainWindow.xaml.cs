@@ -12,18 +12,13 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static WpfApp1.Class1;
 
 namespace WpfApp1
 {
     public partial class MainWindow : Window
     {
 
-        static int fx(int a)
-        {
-            int secNum = a % 100 / 10;
-
-            return secNum;
-        }
 
         public MainWindow()
         {
