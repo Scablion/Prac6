@@ -34,19 +34,12 @@ namespace WpfApp4
             int f = Convert.ToInt32(mean6.Text);
             int g = Convert.ToInt32(mean7.Text);
 
-            //double S1 = Fxyz(a,b,f);
-            //double S2 = Fxyz(g,f,c);
-            //double S3 = Fxyz(ee,g,d);
-            //double SAll = S1 + S2 + S3;
-            //Answer.Text = Convert.ToString(SAll);
+            double S1 = Fxyz(a, b, f);
+            double S2 = Fxyz(g, f, c);
+            double S3 = Fxyz(ee, g, d);
+            double SAll = S1 + S2 + S3;
 
-            Answer.Items.Add($"s1 = {Fxyz(a, b, f)}\n");
-            Answer.Items.Add ( $"s3 = {Fxyz(ee,g,d)}\n");
-            Answer.Items.Add ( $"s2 = {Fxyz(g,f,c)}");
-            //double S2 = Fxyz(g,f,c);
-            //double S3 = Fxyz(ee,g,d);
-            //double SAll = S1 + S2 + S3;
-            //Answer.Text = Convert.ToString(SAll);
+            Answer.Items.Add($"S = {SAll}\n");
 
         }
 
