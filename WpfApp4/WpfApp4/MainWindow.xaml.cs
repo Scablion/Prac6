@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static WpfApp4.Class1;
 
 namespace WpfApp4
 {
@@ -32,9 +33,14 @@ namespace WpfApp4
                 int a = Convert.ToInt32(mean.Text);
                 int b = Convert.ToInt32(mean2.Text);
                 int h = Convert.ToInt32(mean3.Text);
-                double X = Convert.ToDouble(mean4.Text);
-                double Y = Tas(a, b, h, X);
-                Answer.Text = $"Значение выражения: \n{Y:f2}";
+                int X = Convert.ToInt32(mean4.Text);
+                double y;
+                if (X >= a && X <= b)
+                    for (int i = X; i <= b; i += h)
+                    {
+                        y = fx(i);
+                        Answer.Text += $"Значение выражения для {i}: {y:f2}\n";
+                    }
             }
             catch (FormatException)
             {
@@ -46,26 +52,6 @@ namespace WpfApp4
             }
         }
 
-        public static double Tas(int A, int B, int h, double x)
-        {
-            double res = 0;
-            for (int i = A; i <= B; i += h)
-            {
-                if (x == 1 || x == -1)
-                {
-                    res += 1;
-                }
-                else if (x >= 0 && x != 1)
-                {
-                    res =  1 / (1 - x);
-                }
-                else 
-                { 
-                    res = 1 / (1 + x); 
-                }
-            }
-            return res;
-        }
 
     }
 }

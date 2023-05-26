@@ -10,8 +10,8 @@
         <Button Content="OK" Click="Button_Click" FontSize="20" HorizontalAlignment="Left" Margin="148,391,0,0" VerticalAlignment="Top" Width="109" Height="38" RenderTransformOrigin="0.486,0.519"/>
         <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="10,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="173" Text="a"/>
         <TextBox x:Name="mean" HorizontalAlignment="Left" Height="27" FontSize="20" VerticalContentAlignment="Center" Margin="224,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123"/>
-        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="0,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="173"><Run Text="Ответ"/><Run Text=":"/></TextBlock>
-        <TextBlock x:Name="Answer" FontSize="20"  HorizontalAlignment="Left" Margin="71,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="102" Width="311"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="0,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="173"><Run Text="Ответ"/><Run Text=":"/></TextBlock>
+        <TextBlock x:Name="Answer" FontSize="20"  HorizontalAlignment="Left" Margin="59,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="169" Width="333"/>
         <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="10,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="173" Text="h"/>
         <TextBox x:Name="mean3" HorizontalAlignment="Left" Height="27" FontSize="20" VerticalContentAlignment="Center" Margin="224,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123"/>
         <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="10,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="173" Text="b"/>
